@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>resto.accessible.paris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant et Handicap</h1>
+        <p id="p1"><strong>Trouver votre restaurant adapté selon le type d'handicap : </strong></p>
+        <div class="flex-container">
+            <div class="flex-item"><a class="menu" href="index.html" title="page d'acceuil">Accueil</a></div>
+            <div class="flex-item"><a class="menu" href="recommande.html" title="mobilite reduite">Recommandés</a></div>
+            <div class="flex-item"><a class="menu" href="mobilite.html" title="mobilite reduite">Mobilité Réduite</a>
+            </div>
+            <div class="flex-item"><a class="menu" href="v.html" title="handicap visuel">Déficience Visuelle</a></div>
+            <div class="flex-item"><a class="menu" href="psycog.html"
+                    title="handicap psychique ou cognitif">Autiste/Trisomique</a></div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <img id="imga" src="accueil.jpg"
+                alt="image décorative, sur la terrasse il y a une table du restaurant où on peut voir le tour effel">
+            <div id="texte">
+                <p class="text">Si vous ou un de vos proches est en situation de handicap, mais que vous voulez quand
+                    même sortir
+                    dans un restaurant, pour profiter un bon moment ensemble, c'est totalement possible. Ici on vous
+                    présente les restaurants adaptés. </p>
+                <br>
+                <p class="text">En plus, l'accessibilité n'est pas seulement pour les personnes en situation de
+                    handicap. Si vous
+                    voulez simplement connaître ou expériencer la vie quotidienne des personnes handicapés, vous
+                    trouverez chez nous des endroits insolites et éthiques.
+                </p>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>Auteur : Haoran</p><span><a href="contacter.html">Nous Contacter</a></span>
+        <p>Dernière mise à jour : jan 2024</p>
+    </footer>
+
+    <button id="haut" onclick="scrollToTop()">↑ haut de la page</button>
+    <script>
+        function scrollToTop() {
+            document.body.scrollTop = 0; // pour Safari
+            document.documentElement.scrollTop = 0; // pour Chrome, Firefox
+        }
+    </script>
+
+    <p class="description">Cliquez ici pour récupérer le contenu pricipal de
+        ce site
+        en word ou en pdf :)
+    </p>
+    <p>-format word : <a href="contenu_principal.docx" target="_blank">Télécharger le Word</a></p>
+    <p>-format pdf : <a href="contenu_principal.pdf" target="_blank">Télécharger le PDF</a></p>
+</body>
+
+</html>
