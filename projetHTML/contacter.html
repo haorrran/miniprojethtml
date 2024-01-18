@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <p class="h2sous-theme">Formulaire de Contact</p>
+    <header>
+        <div class="flex-container">
+            <div class="flex-item"><a class="menu" href="miniprojetM1.html" title="page d'acceuil">Accueil</a></div>
+            <div class="flex-item"><a class="menu" href="recommande.html" title="mobilite reduite">Recommandés</a></div>
+            <div class="flex-item"><a class="menu" href="mobilite.html" title="mobilite reduite">Mobilité Réduite</a>
+            </div>
+            <div class="flex-item"><a class="menu" href="v.html" title="handicap visuel">Déficience Visuelle</a></div>
+            <div class="flex-item"><a class="menu" href="psycog.html"
+                    title="handicap psychique ou cognitif">Autiste/Trisomique</a></div>
+        </div>
+    </header>
+    <br>
+    <p>Veuillez remplire votre nom, l'adresse mail et le message puis cliquez sur ce bouton 'envouyer'</p>
+    <p>Nous allons vous répondre dans le meilleur délais : </p>
+    <form action="/process-form" method="post">
+        <label for="name">Civilité :</label>
+        <label for="madame">
+            <input type="radio" id="madame" name="salutation" value="madame" required> Madame
+        </label>
+        <label for="monsieur">
+            <input type="radio" id="monsieur" name="salutation" value="monsieur" required> Monsieur
+        </label>
+        <br>
+        <br>
+        <label for="name">Nom : </label>
+        <input type="text" id="name" name="nom" required>
+        <br>
+        <br>
+        <label for="name">Prénom : </label>
+        <input type="text"  required>
+        <br>
+        <br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="20" required></textarea>
+
+        <button id="envoyer" type="submit">Envoyer</button>
+    </form>
+
+    <button id="haut" onclick="scrollToTop()"> ↑ haut de la page</button>
+    <script>
+    function scrollToTop() {
+            document.body.scrollTop = 0; // pour Safari
+            document.documentElement.scrollTop = 0; // pour Chrome, Firefox
+        }
+    </script>
+
+
+</body>
+
+</html>

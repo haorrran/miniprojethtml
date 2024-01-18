@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>resto.mobilite.reduite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <p class="h2sous-theme">Liste de restaurants à Paris avec l'accès à la personne en mobilité réduite</p>
+    <div class="flex-container">
+        <div class="flex-item"><a class="menu" href="miniprojetM1.html" title="page d'acceuil">Accueil</a></div>
+        <div class="flex-item"><a class="menu" href="recommande.html" title="mobilite reduite">Recommandés</a></div>
+        <div class="flex-item"><a class="menu" href="v.html" title="handicap visuel">Déficience Visuelle</a></div>
+        <div class="flex-item"><a class="menu" href="psycog.html"
+                title="handicap psychique ou cognitif">Autiste/Trisomique</a></div>
+    </div>
+    <br>
+    <div id="favori">
+        <div id="section1" class="resto">
+            <div class="info">
+                <p class="h3">Comme Chai Toi - 5ème</p>
+                <p class="description">Accueil très sympa par un staff passionné par le concept. Tout est fait sur place
+                    avec des
+                    produits de qualité. Salle pas très grande donc il est impératif de réserver.</p>
+                <p>Adresse : 13 Quai de Montebello</p>
+                <p>Tél: 01 46 34 66 12</p>
+                <p>Transport : Métro 10 ; RER C</p>
+                <p>Horaires : lundi-vendredi 19h00-23h00 ; weekend 12h00-14h30 19h00-23h00</p>
+                <p>Prix Moyen : 45 euros par personne</p>
+                <p>Site Officiel : https://commechaitoi.monsieur-papounet.fr/</p>
+            </div>
+        </div>
+
+        <div class="resto"> <!--non mm id dans mm page-->
+            <div class="info">
+                <p class="h3">La Mère Lachaise - 20ème</p>
+                <p> Ce joli bistrot contemporain à la mode vintage envoie avec sérieux une bonne petite cuisine
+                    traditionnelle.Les repas et le service étaient impeccables, le tout à un tarif abordable.</p>
+                <p>Adresse : 78 boulevard de Ménilmontant</p>
+                <p>Tél: 01 40 30 26 00</p>
+                <p>Transport : Métro 10 ; RER C</p>
+                <p>Horaires : mardi-samedi 12h00-14h00 19h00-22h00</p>
+                <p>Prix Moyen : 23 euros par personne</p>
+                <p>Site Officiel : https://lamerelachaise.fr/</p>
+            </div>
+        </div>
+
+        <div class="resto">
+            <div class="info">
+                <p class="h3">Trouvez ici plus d'infos sur Les Rupins</p>
+                <p class="description">Oubliez pas de réserver sur TheFork pour obtenir 50% de réduction ^^</p>
+                <p>Quelques spécilités : </p>
+                <p>Entrée</p>
+                <p>Le Velouté de Champignon Et sa crème à la Truffe --13€</p>
+                <p>Le Foie Gras de Canard Maison Toasts, confits d'oignons et confiture figues et noix --19€</p>
+                <p>Plat</p>
+                <p>Le Magret de Canard du Sud-Ouest et sa sauce à l'orange, servi avec son gratin de duo de pommes de
+                    terre --26€</p>
+                <p>Dessert</p>
+                <p>La Brioche Façon Pain Perdu, Servi avec son Caramel Beurre Salé et sa Crème Anglaise --11€</p>
+            </div>
+        </div>
+    </div>
+    <button id="haut" onclick="scrollToTop()"> ↑ haut de la page</button>
+    <script>
+    function scrollToTop() {
+            document.body.scrollTop = 0; // pour Safari
+            document.documentElement.scrollTop = 0; // pour Chrome, Firefox
+        }
+    </script>
+
+</body>
+
+</html>
